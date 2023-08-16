@@ -1,0 +1,24 @@
+What is Appium?
+
+Apium is an open source tool to automate mobile applications
+can automate Native,Web,Hybrid applications
+Supports Andriod iOS and windows desktop platforms
+supports multiple programming languages
+
+Type		Application 		Platforms	 Languges
+		support		
+
+Mobile		Native			Andriod		  Java	   Ruby
+Automatmions     Web			iOS		  c#	   PHP
+		Hybrid			Windows		  Python   JavaScript
+							  Robot Framework
+
+History of Appium 
+
+Appium was originally developed Dan Cuellar in 2001 under the name of "iOSAuto", written in the C# Programming language.
+
+The program was open sourced in August 2012 using the Apache 2 license.
+
+
+
+							  

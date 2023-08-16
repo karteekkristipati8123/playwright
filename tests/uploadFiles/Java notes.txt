@@ -1,0 +1,186 @@
+
+
+What is OOPs?
+OOP(Object Oriented Programming) is a programming paradigm based on the concept of “objects”
+
+What are the principles of OOPs?
+Inheritance: - Reusability
+Encapsulation: - Class
+Polymorphism: - Multiple forms
+Abstraction: - Hiding some things
+Class and Object these both are part of OOPs but do not come under OOP principles
+
+Is java an object-oriented programming language or an object-based programming language?
+Object-based programming language: - In this, we are not able to use Inheritance, which means we are unable to use one object of properties in another object
+Ex: - VB(Visual Basic)
+Java is an Object-oriented programming language because in this we are using Inheritance also 
+
+Is java pure (100%) or Truly or fully or Complete object-oriented 
+programming language?
+No, Java is not a 100% pure object-oriented programming language, because we are using pre-defined data types and static keywords in java, which means we are using pre-defined datatypes like Int, String, double, etc… these are not created by ourselves, these are provided by java
+
+Programming languages that follow OOPs?
+Java, C++, C#, Python, Simula, Smalltalk
+Simula: - It is the First object Oriented Programming language
+Smalltalk: - It is the First 100%/ Truly/Fully object-oriented programming language
+
+
+
+What is Inheritance?
+Inheritance is one of the java principles and it is used for code reusability
+inheritance is a mechanism in which one class acquires all the properties and behavior of another with the specific relationship
+Sub Class/Child Class: A subclass is a class that inherits the other class. It is also called a derived class, extended class, or child class.
+Super Class/Parent Class: Superclass is the class from where a subclass inherits the features. It is also called a base class or a parent class.
+
+Types of Inheritance
+Multiple Inheritance: - 
+When one class extends more than one class then this is called multiple inheritance. 
+For example, if Class C extends class A and B then this type of inheritance is known as multiple inheritance. Java doesn’t allow multiple inheritance.
+
+Multi-Level Inheritance: -
+When a class extends a class, which extends another class then this is called multilevel inheritance. 
+For example, if class C extends class B and class B extends class A then this type of inheritance is known as multilevel inheritance.
+
+Implementation of inheritance with Classe
+Here we can implement the Multi-Level Inheritance only, Multiple Inheritance not able to implement at the class level in java
+Implementation of inheritance with Interfaces
+Here we can implement Multiple Inheritance and Multi-Level Inheritance also
+
+Super keyword and its usage
+The super keyword refers to the objects of the immediate parent class.
+To access the data members of the parent class when both parent and child classes have members with the same name
+When we have a variable in the child class which is already present in the parent class then in order to access the variable of the parent class, you need to use the super keyword.
+For ex: - we have a data variable var declared in the child class and the variable with the same name there in the parent class also. So there is no way you can access the var variable of the parent class without using the super keyword
+
+
+
+What is an access modifier(accessibility modifier/access specifier(C++))?
+Access modifiers define the scope/visibility of the members of a class(variables, constructors, and methods)
+
+List of access modifiers
+public: - access anyone and anywhere(like other methods, classes, packages, projects)
+private: - 
+protected: -
+default(no-modifier) (package-private)
+
+Usage of access modifiers
+public: - access anyone and anywhere(like other methods, classes, packages, projects)
+Class is always public
+private: - access within the class only, we can’t access outside of class
+default:-  if we do not specify any modifier, that is the default modifier, we can access within the class and package-private(we can’t access in the sub-class when the sub-class is in another package)
+protected: -we can access the class and sub-class within the same package, and su-class out of the package when the sub-class is extends class
+
+Access Levels cheat sheet
+ModifIer 	class	package	  subclass	world
+public	          Y	   Y	     Y	          Y
+protected	  Y	   Y	     Y	          N
+default	          Y	   Y	     N	          N
+private	          Y	   N	     N  	  N
+
+
+
+
+What is Encapsulation?
+Encapsulation is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit.(Encapsulation simply means binding object state(fields) and behaviour(methods) together, If you are creating class, you are doing encapsulation.)
+or 
+Encapsulation describes the ability of an object to hide its data and methods from the rest of the world.
+Implementation of Encapsulation
+
+1) Make the instance variables private so that they cannot be accessed directly from outside the class. we can only set and get values of these variables through the methods of the class.
+
+2) Have getter and setter methods in the class to set and get the values of the fields.
+Why is encapsulation also called data-hiding?
+we are trying to hide the data from the rest of the world by providing the methods to access the data
+
+
+What is an interface?
+An interface is a blueprint of a class.
+The interface looks like a class but it is not a class. An interface can have methods and variables just like the class but the methods declared in the interface is by default abstract (only method defined but body).
+Defined or unimplemented methods are known as abstract methods
+implements keyword is used by classes to implement an interface.
+
+When to use & how to use interfaces?
+At the beginning of the project, this is used to document the rules and regulations
+
+How to create and implement an interface?
+Package -> New -> interface
+Select page-> File menu -> interface
+
+Can we provide implementation within the interface?
+class is an implement for interface
+
+Different access modifiers and keywords used in interface
+access modifiers: -
+public
+private
+default
+keywords: -
+static
+
+How the interfaces changed over the different versions of java?
+As of Java 7, the interface only indicates what to do, but not how to do it.
+From Java 8 version, in the interface, we can do the implementation also, for this implementation java provides two-ways
+default: - If we do the implementation with this default in the interface, we can change that implementation in the classes
+static: - If we do the implementation with this static in the interface, we can use this implementation at any place without any changes
+Note: - In the interface everything is public(which means if we do not provide any access modifier in the interface, that is automatically public) so we should provide the default keyword and static keyword for implementation in the interface.
+From Java 9 version, java provides the private modifier in the interface for code reusability	
+
+What is an abstract class?
+An abstract class is a class which can contain the abstract method and defined with the ketword abstract
+
+When to use & how to use/create an abstract class
+if we have a common implementation between multiple classes, then that time we can the implantation in the abstract class
+or
+if we have a partial implementation in the class, then we can implement in the abstract class
+package -> new -> class-> select abstract check box
+
+Can we create an instance of an abstract class?
+No, java allows non-abstract methods(implemented methods) in the abstract class, but abstract methods should be allowed in the abstract class only, the abstract methods should not be allowed in the class
+
+Can we have non-abstract methods inside the abstract class?
+Yes
+
+Can we extend multiple abstract classes into a single class?
+No, java does not support multiple inheritance at class level
+
+Can we implement the abstract class like an interface?
+No, in abstract class java allows extends keyword, but not allowed the implement keyword
+
+
+
+
+What is abstraction?
+Abstraction is a process of hiding the implementation details and showing only functionality to the user.
+How can we achieve the abstraction in Java?
+To the Java 7, we can achieve the 100% abstraction in java, but from Java 8 we may achieve 100% abstraction or maynot, it depending on our programming skills
+Until Java 7, we can achieve 100% abstraction in Java, but from Java 8 we may or may not reach 100% abstraction, depending on our programming abilities
+Implementation of abstraction
+The implementation  code is hidden from the user and only the necessary functionality is shown to the user. 
+we can achieve abstraction in two ways: -
+Using Abstract Class
+Using Interface
+
+
+What is polymorphism?
+poly: - multiple (more than one), morph: - forms
+Polymorphism is the ability of an object to take on many forms 
+
+Different types of polymorphism in java?
+Compile-time Polymorphism : - it is a type of Polymorphism which can be achieved at java compilation time 
+It is also called as static Polymorphism or early binding
+Ex: - system.out.printf/println() // this is best example for method overloading
+
+Runtime Polymorphism : - it is a type of Polymorphism  which can be achieved at java runtime or execution time.
+it is also called as dynamic Polymorphism  or dynamic method dispatch
+
+Method overloading
+Compile time Polymorphism can be achieved with method overloading concept in java
+Method overloading with this feature we can implement the multiple methods with the same name but with different type of parameters in a class
+
+Method overriding
+Runtime Polymorphism can be achieved with method overriding concept in java
+Method overriding with this feature we can implement the separate method in sub class instead of using from the super class method
+
+Is override annotation mandatory to use in java?
+No, but this is best practice, why because if we write any method/overloading method insted of overridding method, the @override annotation is indicates we as compiler error
+		
