@@ -1,6 +1,6 @@
 const{test,expect}=require('@playwright/test')
 
-test.skip('Demo Alerts Simple Alert',async({page})=> {
+    test.skip('Demo Alerts Simple Alert',async({page})=> {
     await page.goto('https://testautomationpractice.blogspot.com/')
     page.on('dialog', async dialog =>{
         expect(dialog.type()).toContain('alert')
