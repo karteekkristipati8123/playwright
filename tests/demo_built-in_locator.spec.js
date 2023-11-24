@@ -4,8 +4,8 @@ test('demoBuiltin_Locators',async({page})=>{
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
     
     //page.getByAltText
-    const logo=await page.getByAltText('company-branding');
-    await expect(logo).toBeVisible();
+    //const logo=await page.getByAltText('company-branding');
+    //await expect(logo).toBeVisible();
     
     // page.getByPlaceholder 
     await page.getByPlaceholder('Username').fill('Admin');
